@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kontrolní návodky</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="login-overlay">
+    <div class="login-box">
+      <h2>Přihlášení</h2>
+      <input id="login-username" type="text" placeholder="Uživatelské ID">
+      <input id="login-password" type="password" placeholder="Heslo">
+      <button id="login-btn">Přihlásit se</button>
+      <p id="login-error">Špatné přihlašovací údaje.</p>
+    </div>
+  </div>
+
+  <div id="tabs-container"></div>
+  <div id="contents-container"></div>
+
+  <div id="modal-overlay" role="dialog" aria-modal="true">
+    <div id="modal">
+      <button class="close-modal">&times;</button>
+      <h2>Informace o aplikaci</h2>
+      <p>Název: Kontrolní návodky<br>Autor: Tomáš Neumann<br>Kontakt: t.neumann@email.cz<br><br>Verze: 2.0<br>Aktualizace: 06.06.2025<br><br>Aplikace pro práci s kontrolními návodkami.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div>© 2025 Tomáš Neumann</div>
+    <button id="info-btn" aria-label="Informace o aplikaci">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm.75 15h-1.5v-6h1.5v6zm0-8h-1.5V7h1.5v2z"/>
+      </svg>
+      Info
+    </button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
